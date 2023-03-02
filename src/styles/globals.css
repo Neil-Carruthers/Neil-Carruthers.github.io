@@ -1,0 +1,117 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Calibre, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  background-color: #0a192f;
+  color: #8892b0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fixedSys {
+font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+.sectionHeader {
+    color: var(--main-header-color);
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.sectionHeader::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 50px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: var(--light-navy);
+}
+
+.sectionHeader::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--light-navy);
+}
+
+@media screen and (max-width: 800px) {
+  .sectionHeader {
+    font-size: 2rem;
+  }
+
+  .sectionHeader::before {
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  .sectionHeader::after {
+    width: 25px;
+    margin-left: 10px;
+  }
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url('../fonts/Calibre-Regular.woff2');
+  font-weight: 100 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url('../fonts/Calibre-Medium.woff2');
+  font-weight: 500 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url('../fonts/Calibre-Semibold.woff2');
+  font-weight: 800 900;
+  font-style: normal;
+}
+  
+:root {
+  --main-header-color: #ccd6f6;
+  --flavor-color: #64ffda;
+  --primary-color: #8892b0;
+  --light-navy: #233554;
+  font-size: 20px;
+
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    font-size: 14px;
+  }
+}
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */

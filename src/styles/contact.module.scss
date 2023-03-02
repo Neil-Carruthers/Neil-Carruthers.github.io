@@ -1,0 +1,47 @@
+.container {
+    p, div {
+        width: 55%;
+        line-height: 1.5;
+    }
+
+    // button {
+    //     all: unset;
+    //     border-radius: 6px;
+    //     display: flex;
+    //     transition: background-color 0.2s linear;
+    //     height: 36px;
+    //     width: 50px;
+
+    //     &:hover {
+    //         cursor: pointer;
+    //         background-color: rgba(100, 255, 218, 0.1);
+    //     }
+    // }
+
+    div {
+        display: flex;
+
+        button {
+            all: unset;
+            border-radius: 6px;
+            display: flex;
+            transition: background-color 0.2s linear;
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(100, 255, 218, 0.1);
+            }
+
+            &:first-child {
+                height: 36px;
+                width: 50px;
+            }
+
+            &:last-child {
+                height: 36px;
+                width: 36px;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
