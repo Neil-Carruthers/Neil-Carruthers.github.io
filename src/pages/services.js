@@ -15,19 +15,11 @@ export default function Services() {
           </p>
 
           <p>
-            I first began my journey back in 2000. I had a lot of fun messing around with HTML and CSS to create web pages about my favorite shows and video games. Quickly I started to become more interested in how to write computer programs. I started out writing some very simple programs in C that could do my high school math homework for me.
-          </p>
-
-          <p>
-            Upon graduating from high school I enrolled in the <span><a target="_blank" rel="noreferrer" href="https://www.dal.ca/faculty/computerscience/undergraduate-programs/study-computer-science.html">Bachelor of Computer Science program at Dalhousie University</a></span>. I greatly enjoyed my time learning about IT fundamentals, software development, data structures, algorithms and database applications. I ultimately focused on web and mobile development.
-          </p>
-
-          <p>
-            Fast forward to today. I am currently a software developer at an <span><a target="_blank" rel="noreferrer" href="https://www.binogi.com/">international educational technology start-up</a></span> with experience in modern JavaScript, TypeScript, React, Next.js, GraphQL, RESTful APIs, web3 and clean architectural style, bringing my experiences from engineering design into software development.
-          </p>
-
-          <p>
-            I believe that React has really proven to be a remarkable tool for creating front end client applications as a result of its amazing efficiency and its developer experience, among many other things. When I first learned about web3 I was impressed by the new ways of thinking about how to execute back-end logic and store data and I'm very excited to see how these new technologies will grow and fill more roles in the years to come.
+            <ul>
+                <li>Test Driven Development</li>
+                <li>Design and Implement New Features</li>
+                <li>Performance Optimizations</li>
+            </ul>
           </p>
         </div>
         <div className={styles.colRight}>
