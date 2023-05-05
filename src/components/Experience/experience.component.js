@@ -1,6 +1,5 @@
 import * as React from 'react'
-import Seo from '../components/seo';
-import * as styles from '../styles/experience.module.scss';
+import * as styles from './experience.module.scss';
 
 const Highlighted = ({ children }) => {
     return <span className={styles.fcWhite}>{children}</span>
@@ -102,5 +101,3 @@ export default function Experience() {
         </main>
     )
 }
-
-export const Head = () => <Seo />

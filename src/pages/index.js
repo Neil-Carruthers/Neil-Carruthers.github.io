@@ -3,7 +3,11 @@ import { graphql, Link } from "gatsby"
 
 import Seo from "../components/seo"
 
+import About from "../components/About/about.component";
+
 import * as styles from '../styles/home.module.scss';
+import Experience from "../components/Experience/experience.component";
+import Contact from "../components/Contact/contact.component";
 
 export default function Home({ data }) {
   return (
@@ -12,22 +16,14 @@ export default function Home({ data }) {
         <p className={`${styles.greeting} fixedSys`}>Hi, my name is</p>
         <div className={styles.header}>
           <h1>Neil Carruthers.</h1>
-          <h1>I&apos;m passionate about React and Web3.</h1>
+          <h1>I&apos;m passionate about React.</h1>
         </div>
         <p className={styles.summary}>
-          I&apos;m a software developer specializing in React and Node.js.
-          {' '}
-          Currently, I&apos;m focused on building multi-lingual, digital learning products at
-          {' '}
-          <span className={styles.flavor}>
-            <a href="https://www.binogi.com/">
-              Binogi
-            </a>
-          </span>.
+          Full stack senior developer in React using optimal and current best practices
         </p>
         </section>
       <section className={styles.blogPosts}>
-        <h3 className='sectionHeader'>Recent Blog Posts</h3>
+        <h3 className='sectionHeader'>Blog Posts</h3>
         <ul>
           {
             data.allMarkdownRemark.edges.slice(0,3).map(({node}) => {
@@ -47,6 +43,15 @@ export default function Home({ data }) {
           }
         </ul>
       </section>
+      <section className={styles.blogPosts}>
+        <About />
+      </section>
+      <section className={styles.blogPosts}>
+        <Experience />
+      </section>
+      <section className={styles.blogPosts}>
+        <Contact />
+      </section>
     </main>
   )
 }
@@ -58,6 +63,7 @@ export const query = graphql`
     allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
       edges {
         node {
+          html
           frontmatter {
             title
             date

@@ -1,7 +1,6 @@
 import * as React from 'react'
-import Seo from '../components/seo'
 import { StaticImage } from 'gatsby-plugin-image';
-import * as styles from '../styles/about.module.scss';
+import * as styles from './about.module.scss';
 
 export default function About() {
   return (
@@ -44,5 +43,3 @@ export default function About() {
     </main>
   )
 }
-
-export const Head = () => <Seo />

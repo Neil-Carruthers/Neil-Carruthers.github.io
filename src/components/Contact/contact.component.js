@@ -1,7 +1,6 @@
 import * as React from 'react'
-import * as styles from '../styles/contact.module.scss';
+import * as styles from './contact.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
-import Seo from '../components/seo';
 
 export default function Contact() {
     return (
@@ -12,7 +11,7 @@ export default function Contact() {
                 <button>
                     <a href="mailto:carruthers.n.t@gmail.com">
                         <StaticImage
-                            src="../images/email.svg"
+                            src="../../images/email.svg"
                             alt="email"
                             layout="fixed"
                             width={50}
@@ -27,7 +26,7 @@ export default function Contact() {
                         rel="noreferrer"
                     >
                         <StaticImage
-                            src="../images/linkedin.svg"
+                            src="../../images/linkedin.svg"
                             alt="linkedin"
                             layout="fixed"
                             width={36}
@@ -39,5 +38,3 @@ export default function Contact() {
         </main>
     )
 }
-
-export const Head = () => <Seo />
