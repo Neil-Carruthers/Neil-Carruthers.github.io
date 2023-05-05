@@ -43,13 +43,13 @@ export default function Home({ data }) {
           }
         </ul>
       </section>
-      <section className={styles.blogPosts}>
+      <section>
         <About />
       </section>
-      <section className={styles.blogPosts}>
+      <section>
         <Experience />
       </section>
-      <section className={styles.blogPosts}>
+      <section>
         <Contact />
       </section>
     </main>
