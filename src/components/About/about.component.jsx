@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 import * as styles from './about.module.scss';
 
 export default function About() {
@@ -29,7 +29,7 @@ export default function About() {
             I believe that React has really proven to be a remarkable tool for creating front end client applications as a result of its amazing efficiency and its developer experience, among many other things. When I first learned about web3 I was impressed by the new ways of thinking about how to execute back-end logic and store data and I'm very excited to see how these new technologies will grow and fill more roles in the years to come.
           </p>
         </div>
-        <div className={styles.colRight}>
+        {/* <div className={styles.colRight}>
           <StaticImage
               src="../images/me.png"
               alt="personal"
@@ -38,7 +38,7 @@ export default function About() {
               width={300}
               height={300}
           />
-        </div>
+        </div> */}
       </div>
     </main>
   )
