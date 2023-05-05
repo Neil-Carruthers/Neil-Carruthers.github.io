@@ -21,7 +21,7 @@ export default function Header() {
                 </span>
                 <span className='fixedSys'>
                     {/* <Link to="/services">Services</Link> */}
-                    <Link to="/blog">Blog</Link>
+                    {/* <Link to="/blog">Blog</Link> */}
                     {/* <Link to="/about">About</Link> */}
                     {/* <Link to="/experience">Experience</Link>
                     <Link to="/contact">Contact</Link> */}

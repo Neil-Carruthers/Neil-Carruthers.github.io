@@ -27,7 +27,13 @@ export default function Home({ data }) {
         <ul>
           {
             data.allMarkdownRemark.edges.slice(0,3).map(({node}) => {
-              const { id, excerpt, fields: { slug },  frontmatter: { title, date } } = node
+              const {
+                id,
+                // html,
+                excerpt,
+                fields: { slug }, 
+                frontmatter: { title, date }
+              } = node
 
               return (
                 <li key={id}>
@@ -37,6 +43,7 @@ export default function Home({ data }) {
                   {' '}
                   <span className={styles.formattedDate}>({date})</span>
                   <p>{excerpt}</p>
+                  {/* <div dangerouslySetInnerHTML={{__html: html}}/> */}
                 </li>
               )
             })
@@ -70,7 +77,7 @@ export const query = graphql`
             featured
           }
           id
-          excerpt
+          excerpt(pruneLength: 250)
           fields {
             slug
           }
