@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { useEffect, useState } from 'react'
+import { StaticImage } from 'gatsby-plugin-image';
 
 import * as styles from './top-button.module.scss';
 
@@ -25,7 +26,13 @@ export default function TopButton() {
                                 behavior: 'smooth'
                             })}}
                         >
-                            Click Me
+                            <StaticImage
+                                src="../../../images/up-chevron.png"
+                                alt="go to top"
+                                layout="fixed"
+                                width={25}
+                                height={15}
+                            />
                         </button>
                     </div>
                 )

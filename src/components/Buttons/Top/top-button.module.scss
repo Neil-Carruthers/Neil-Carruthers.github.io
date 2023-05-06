@@ -1,9 +1,26 @@
 .container {
-    border: 1px solid red;
-    padding: 1rem;
     position: fixed;
-    bottom: 12px;
-    right: 12px;
+    bottom: 24px;
+    right: 24px;
+
+    button {
+        all: unset;
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            div {
+                transition: all 0.5s;
+                transform: scale(1.3);
+            }
+        }
+    }
 
 }
 
