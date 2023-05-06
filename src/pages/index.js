@@ -4,10 +4,11 @@ import { graphql, Link } from "gatsby"
 import Seo from "../components/seo"
 
 import About from "../components/About/about.component";
-
-import * as styles from '../styles/home.module.scss';
 import Experience from "../components/Experience/experience.component";
 import Contact from "../components/Contact/contact.component";
+import TopButton from "../components/Buttons/Top/top-button.component";
+
+import * as styles from '../styles/home.module.scss';
 
 export default function Home({ data }) {
   return (
@@ -59,6 +60,7 @@ export default function Home({ data }) {
       <section>
         <Contact />
       </section>
+      <TopButton />
     </main>
   )
 }

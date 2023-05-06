@@ -27,9 +27,11 @@
 
 .summary {
   width: 50%;
+  font-size: 2rem;
 
   @media screen and (max-width: 800px) {
     width: inherit;
+    font-size: 1rem;
   }
 }
 
