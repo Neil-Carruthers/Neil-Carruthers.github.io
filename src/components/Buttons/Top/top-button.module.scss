@@ -4,4 +4,11 @@
     position: fixed;
     bottom: 12px;
     right: 12px;
+
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        display: none;
+    }
 }

@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { useEffect, useState } from 'react'
+
 import * as styles from './top-button.module.scss';
 
 export default function TopButton() {
@@ -12,16 +13,20 @@ export default function TopButton() {
         });
     }, [])
 
-    const handleClick = () => {
-        window.scroll(0,0);
-    }
-
     return (
         <>
             {
                 showButton && (
                     <div className={styles.container}>
-                        <button onClick={handleClick}>Click Me</button>
+                        <button
+                            onClick={() => {window.scroll({
+                                top: 0,
+                                left: 0,
+                                behavior: 'smooth'
+                            })}}
+                        >
+                            Click Me
+                        </button>
                     </div>
                 )
             }
