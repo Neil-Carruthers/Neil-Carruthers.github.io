@@ -1,0 +1,26 @@
+.container {
+    border: 1px solid white;
+    border-radius: 8px;
+    position: fixed;
+    top: 72px;
+    right: 24px;
+    font-size: 1.125rem;
+
+    ul {
+        list-style: none;
+        padding: 1.5rem 1.75rem;
+        margin: 0;
+
+        li {
+            a {
+                &:hover {
+                    color: var(--flavor-color);
+                }
+            }
+        }
+
+        li + li {
+            margin-top: 0.5rem;
+        }
+    }
+}

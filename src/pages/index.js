@@ -7,12 +7,14 @@ import About from "../components/About/about.component";
 import Experience from "../components/Experience/experience.component";
 import Contact from "../components/Contact/contact.component";
 import TopButton from "../components/Buttons/Top/top-button.component";
+import SideMenu from "../components/Side-Menu/side-menu.component";
 
 import * as styles from '../styles/home.module.scss';
 
 export default function Home({ data }) {
   return (
     <main>
+      <SideMenu />
       <section>
         <p className={`${styles.greeting} fixedSys`}>Hi, my name is</p>
         <div className={styles.header}>
@@ -22,9 +24,10 @@ export default function Home({ data }) {
         <p className={styles.summary}>
           Full stack senior developer in React using optimal and current best practices
         </p>
-        </section>
+      </section>
+
       <section className={styles.blogPosts}>
-        <h3 className='sectionHeader'>Blog Posts</h3>
+        <h3 className='sectionHeader' id='blog-posts'>Blog Posts</h3>
         <ul>
           {
             data.allMarkdownRemark.edges.slice(0,3).map(({node}) => {
