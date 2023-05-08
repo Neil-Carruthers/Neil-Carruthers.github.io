@@ -1,6 +1,5 @@
 .container {
-    border: 1px solid white;
-    border-radius: 8px;
+    border-left: 1px solid var(--light-navy);
     position: fixed;
     top: 72px;
     right: 24px;
@@ -8,7 +7,7 @@
 
     ul {
         list-style: none;
-        padding: 1.5rem 1.75rem;
+        padding: 0 1.125rem;
         margin: 0;
 
         li {
@@ -22,5 +21,11 @@
         li + li {
             margin-top: 0.5rem;
         }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        display: none;
     }
 }

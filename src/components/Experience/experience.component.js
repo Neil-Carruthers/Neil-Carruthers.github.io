@@ -12,7 +12,7 @@ const Subheader = ({ children }) => {
 export default function Experience() {
     return (
         <main className={styles.container}>
-            <h3 className="sectionHeader">Experience</h3>
+            <h3 className="sectionHeader" id='experience'>Experience</h3>
             <section>
                 <h4>Binogi</h4>
                 <Subheader>September 2021 - Present // Halifax, Nova Scotia</Subheader>

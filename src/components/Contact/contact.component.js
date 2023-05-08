@@ -5,7 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 export default function Contact() {
     return (
         <main className={styles.container}>
-            <h3 className="sectionHeader">Contact</h3>
+            <h3 className="sectionHeader" id='contact'>Contact</h3>
             <p>I am not currently looking for any new opportunities, however feel free to reach out to me if you have any questions or comments. I am always happy to discuss anything to do with software development especially when related to React or Solidity.</p>
             <div>
                 <button>

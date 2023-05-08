@@ -5,7 +5,7 @@ import * as styles from './about.module.scss';
 export default function About() {
   return (
     <main className={styles.container}>
-      <h3 className='sectionHeader'>About Me</h3>
+      <h3 className='sectionHeader' id='about-me'>About Me</h3>
 
       <div className={styles.row}>
         <div className={styles.colLeft}>
