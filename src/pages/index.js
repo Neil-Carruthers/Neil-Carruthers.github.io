@@ -26,7 +26,7 @@ export default function Home({ data }) {
         </p>
       </section>
 
-      <section className={styles.blogPosts}>
+      {/* <section className={styles.blogPosts}>
         <h3 className='sectionHeader' id='blog-posts'>Blog Posts</h3>
         <ul>
           {
@@ -47,19 +47,19 @@ export default function Home({ data }) {
                   {' '}
                   <span className={styles.formattedDate}>({date})</span>
                   <p>{excerpt}</p>
-                  {/* <div dangerouslySetInnerHTML={{__html: html}}/> */}
+                  <div dangerouslySetInnerHTML={{__html: html}}/>
                 </li>
               )
             })
           }
         </ul>
-      </section>
+      </section> */}
       <section>
         <About />
       </section>
-      <section>
+      {/* <section>
         <Experience />
-      </section>
+      </section> */}
       <section>
         <Contact />
       </section>
