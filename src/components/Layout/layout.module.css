@@ -1,20 +1,21 @@
 .container {
     margin: 1.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .childrenContainer {
-    margin-left: 7rem;
-    margin-top: 3rem;
+    padding-top: 8rem;
 }
 
 @media screen and (max-width: 800px) {
     .container {
-        margin: 1rem 1rem;
+        margin: 1rem;
     }
 
     .childrenContainer {
-        margin: 1rem;
-        padding: 12px;
+        padding-top: 4rem;
     }
 }

@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Neil Carruthers`,
-    description: `Personal website of Neil Carruthers`,
+    title: `Genomos`,
+    description: `Professional website of Genomos`,
     author: `neil carruthers`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://www.genomos.ca/`,
   },
   plugins: [
     `gatsby-plugin-sass`,

@@ -1,9 +1,16 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   h1 {
-    color: var(--main-header-color);
+    color: var(--primary-color);
     font-size: 4rem;
     margin: 0;
     font-weight: 800;
+    line-height: 1;
+    margin-top: 1rem;
   }
 
   @media screen and (max-width: 800px) {
@@ -11,80 +18,4 @@
       font-size: 2rem;
     }
   }
-
-  h1 + h1 {
-    color: var(--primary-color);
-    margin-top: -0.5rem;
-    line-height: 1;
-  }
-}
-
-.greeting {
-  font-size: 0.85rem;
-  color: var(--flavor-color);
-  margin-bottom: 1rem;
-}
-
-.summary {
-  width: 50%;
-  font-size: 2rem;
-
-  @media screen and (max-width: 800px) {
-    width: inherit;
-    font-size: 1rem;
-  }
-}
-
-.flavor {
-  color: var(--flavor-color);
-
-  a:hover {
-    text-decoration: underline;
-  }
-}
-
-.blogPosts {
-  padding-top: 100px;
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0 4rem 0;
-    width: 55%;
-
-    li {
-      a {
-        font-size: 1.5rem;
-        color: var(--main-header-color);
-  
-        &:hover {
-          color: var(--flavor-color);
-        }
-      }
-
-      p {
-        margin-top: 0rem;
-        font-style: italic;
-      }
-    }
-
-    li + li {
-      margin-top: 2rem;
-    }
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .blogPosts {
-    padding-top: 50px;
-
-    ul {
-      width: inherit;
-    }
-  }
-}
-
-.formattedDate {
-  font-size: 1rem;
-  color: var(--primary-color);
 }
