@@ -1,4 +1,8 @@
-export default function formatDateTime(deltaInMS) {
+import * as React from 'react';
+
+import './formatted-time.module.scss';
+
+export default function FormattedTime({ deltaInMS }) {
     const msInADay = 24 * 60 * 60 * 1000;
     const msInAnHour = 60 * 60 * 1000;
     const msInAMinute = 60 * 1000;
@@ -17,5 +21,15 @@ export default function formatDateTime(deltaInMS) {
     let digits = [numberOfDays, numberOfHours, numberOfMinutes, numberOfSeconds];
     digits = digits.map((digit) => Math.floor(digit));
 
-    return `${digits[0]} Days ${digits[1]} Hours ${digits[2]} Minutes ${digits[3]} Seconds`
+    return (
+        <p>
+            <span>{digits[0]}</span> Days
+            {` `}
+            <span>{digits[1]}</span> Hours
+            {` `}
+            <span>{digits[2]}</span> Minutes
+            {` `}
+            <span>{digits[3]}</span> Seconds
+        </p>
+    )
 }

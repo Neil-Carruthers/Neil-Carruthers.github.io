@@ -1,13 +1,10 @@
 import * as React from "react"
 import { useState, useEffect } from "react";
-
 import { StaticImage } from 'gatsby-plugin-image';
-
 import Seo from "../components/seo"
+import FormattedTime from "../components/FormattedTime/formatted-time";
 
-import formatDateTime from "../../lib/utils";
-
-import * as styles from '../styles/home.module.scss';
+import '../styles/home.module.scss';
 
 const deadline = new Date('September 15, 2023 12:00:00');
 
@@ -26,7 +23,7 @@ export default function Home() {
 
   return (
     <section>
-      <header className={styles.header}>
+      <header>
         <StaticImage
             src="../images/gnomes-design-scaled.png"
             alt="Company logo"
@@ -35,7 +32,7 @@ export default function Home() {
             height={250}
         />
         <h1>We are launching soon!</h1>
-        <p>{formatDateTime(delta)}</p>
+        <FormattedTime deltaInMS={delta}/>
       </header>
     </section>
   )
