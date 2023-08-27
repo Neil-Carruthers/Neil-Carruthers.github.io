@@ -1,21 +1,14 @@
 .container {
     margin: 1.5rem 2.5rem;
+    padding-top: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-.childrenContainer {
-    padding-top: 8rem;
 }
 
 @media screen and (max-width: 800px) {
     .container {
         margin: 1rem;
-    }
-
-    .childrenContainer {
         padding-top: 4rem;
     }
 }
