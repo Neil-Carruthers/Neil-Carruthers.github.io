@@ -1,26 +1,13 @@
 import * as React from "react"
-import { useState, useEffect } from "react";
 import { StaticImage } from 'gatsby-plugin-image';
 import Seo from "../components/seo"
-import FormattedTime from "../components/FormattedTime/formatted-time";
+import Countdown from "../components/Countdown/countdown";
 
 import * as styles from '../styles/home.module.scss';
 
-const deadline = new Date('September 15, 2023 12:00:00');
+import { DEADLINE } from "../../lib/constants";
 
 export default function Home() {
-  const [delta, setDelta] = useState(0);
-
-  setTimeout(() => {
-    setDelta(delta - 1000)
-  }, 1000)
-
-  useEffect(() => {
-    const todayDate = new Date();
-    const deltaInMS = deadline.getTime() - todayDate.getTime();
-    setDelta(deltaInMS);
-  }, [])
-
   return (
     <section className={styles.container}>
       <header>
@@ -32,7 +19,7 @@ export default function Home() {
             height={250}
         />
         <h1>We are launching soon!</h1>
-        <FormattedTime deltaInMS={delta}/>
+        <Countdown deadline={DEADLINE}/>
       </header>
     </section>
   )
