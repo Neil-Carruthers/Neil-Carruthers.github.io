@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Seo from "../components/seo"
 import FormattedTime from "../components/FormattedTime/formatted-time";
 
-import '../styles/home.module.scss';
+import * as styles from '../styles/home.module.scss';
 
 const deadline = new Date('September 15, 2023 12:00:00');
 
@@ -22,7 +22,7 @@ export default function Home() {
   }, [])
 
   return (
-    <section>
+    <section className={styles.container}>
       <header>
         <StaticImage
             src="../images/gnomes-design-scaled.png"

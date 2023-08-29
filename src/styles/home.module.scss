@@ -1,21 +1,23 @@
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  h1 {
-    color: var(--primary-color);
-    font-size: 4rem;
-    margin: 0;
-    font-weight: 800;
-    line-height: 1;
-    margin-top: 1rem;
-  }
-
-  @media screen and (max-width: 800px) {
+.container {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
     h1 {
-      font-size: 2rem;
+      color: var(--primary-color);
+      font-size: 4rem;
+      margin: 0;
+      font-weight: 800;
+      line-height: 1;
+      margin-top: 1rem;
+    }
+  
+    @media screen and (max-width: 800px) {
+      h1 {
+        font-size: 2rem;
+      }
     }
   }
 }

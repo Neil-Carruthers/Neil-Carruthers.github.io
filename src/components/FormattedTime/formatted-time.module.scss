@@ -1,4 +1,4 @@
-p {
+.container {
     font-size: 1.75rem;
     font-variant: small-caps;
     margin-top: 0.5rem;
@@ -11,7 +11,7 @@ p {
 }
 
 @media screen and (max-width: 800px) {
-    p {
+    .container {
       font-size: 1rem;
 
       span {

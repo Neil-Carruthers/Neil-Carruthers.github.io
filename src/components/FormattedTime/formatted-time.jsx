@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import './formatted-time.module.scss';
+import * as styles from './formatted-time.module.scss';
 
 export default function FormattedTime({ deltaInMS }) {
     const msInADay = 24 * 60 * 60 * 1000;
@@ -22,7 +22,7 @@ export default function FormattedTime({ deltaInMS }) {
     digits = digits.map((digit) => Math.floor(digit));
 
     return (
-        <p>
+        <p className={styles.container}>
             <span>{digits[0]}</span> Days
             {` `}
             <span>{digits[1]}</span> Hours
