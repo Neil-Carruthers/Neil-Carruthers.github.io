@@ -5,7 +5,7 @@ import * as styles from './countdown.module.scss';
 
 import { MS_IN_AN_HOUR, MS_IN_A_DAY, MS_IN_A_MINUTE } from '../../../lib/constants';
 
-export default function FormattedTime({ deadline }) {
+export default function Countdown({ deadline }) {
     const [delta, setDelta] = useState(0);
 
     setTimeout(() => {
